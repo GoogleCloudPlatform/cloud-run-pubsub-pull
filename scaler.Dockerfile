@@ -6,7 +6,7 @@
 # To build this image, run the following from the repository root:
 #
 # docker build -t <image name> -f scaler.Dockerfile .
-FROM golang:1.24 AS builder
+FROM golang:1.25 AS builder
 WORKDIR /app
 COPY go.* ./
 RUN go mod download
